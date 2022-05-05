@@ -1045,6 +1045,7 @@ static int appletb_inp_connect(struct input_handler *handler,
 		handle = &tb_dev->kbd_handle;
 		handle->name = "tbkbd";
 		switch (dev->id.product) {
+		case 0x0280u: /* MacBookAir9,1 */
 		case 0x0340u: /* MacBookPro16,1/4 */
 		case 0x027eu: /* MacBookPro16,2 */
 		case 0x027fu: /* MacBookPro16,3 */
